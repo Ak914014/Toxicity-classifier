@@ -17,19 +17,19 @@ RUN apt-get update && apt-get install -y build-essential
 RUN npm rebuild @tensorflow/tfjs-node --build-addon-from-source
 
 # Install JSDoc globally
-# RUN npm install -g jsdoc
+RUN npm install -g jsdoc
 
 # Copy the rest of the application code
 COPY . .
 
 # # Ensure JSDoc configuration file is copied
-# COPY jsdoc.json ./
+COPY jsdoc.json ./
 
 # Expose the application port
 EXPOSE 5000
 
 # Generate JSDoc documentation
-# RUN npm run jsdoc
+RUN npm run jsdoc
 
 # Start the server
 CMD ["node", "index.js"]

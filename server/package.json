@@ -12,14 +12,17 @@
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
     "yamljs": "^0.3.0",
-    "node-fetch": "^3.0.0"
+    "node-fetch": "^3.0.0",
+     "jsdoc": "4.0.3"
+    
   },
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "jsdoc": "jsdoc -c jsdoc.json"
   },
   "keywords": [],
   "author": "",
